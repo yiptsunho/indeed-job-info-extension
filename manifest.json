@@ -1,0 +1,26 @@
+{
+  "manifest_version": 3,
+  "name": "Indeed Job Posting Info",
+  "version": "1.4",
+  "description": "Displays job posting duration and related information on Indeed job pages.",
+  "permissions": [
+    "webRequest",
+    "webRequestBlocking",
+    "activeTab",
+    "scripting"
+  ],
+  "host_permissions": [
+    "https://*.indeed.com/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["https://*.indeed.com/*"],
+      "js": ["content.js"],
+      "css": ["styles.css"],
+      "run_at": "document_idle"
+    }
+  ],
+  "background": {
+    "service_worker": "background.js"
+  }
+}

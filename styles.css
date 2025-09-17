@@ -1,0 +1,29 @@
+#job-posting-info, #job-posting-test {
+    background-color: #f8f9fa;
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 5px;
+    font-family: Arial, sans-serif;
+}
+#job-posting-info h3, #job-posting-test h3, #job-posting-info h4 {
+    margin: 0 0 10px;
+    font-size: 16px;
+    color: #333;
+}
+#job-posting-info p, #job-posting-test p {
+    margin: 5px 0;
+    font-size: 14px;
+}
+#job-posting-info pre {
+    background-color: #f0f0f0;
+    padding: 10px;
+    border-radius: 3px;
+    font-size: 12px;
+    white-space: pre-wrap;
+    max-height: 300px;
+    overflow-y: auto;
+}
+#job-posting-test {
+    background-color: #ffcccc; /* Distinct color for test div */
+}
